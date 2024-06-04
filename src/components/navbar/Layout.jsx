@@ -33,7 +33,7 @@ const Layout = () => {
                         <Action_Button />
                         <button
                             onClick={() => setIsOpen((curr) => !curr)}
-                            className='text-3xl mr-4 p-1 rounded bg-slate-100 duration-200 hover:bg-slate-200'>
+                            className='text-3xl mr-4 p-1 rounded bg-slate-100 duration-200 hover:bg-slate-200 md:hidden'>
                             <TbMenuDeep />
                         </button>
                     </div>
