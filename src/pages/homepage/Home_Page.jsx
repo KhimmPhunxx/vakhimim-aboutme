@@ -20,7 +20,7 @@ const Home_Page = () => {
         <h1
           className='text-5xl font-semibold text-center mt-10 md:mt-32 text-gradient-to-r from-blue-500 to-green-500 leading-tight'
         >Looking for <br />
-          Web Developer
+          Front end Developer
         </h1>
         <p className=' text-center mt-10 md:w-[630px] mx-auto text-xl'>
           Hi, I'm Vakhim. I'm a web developer based in Cambodia. I have a passion for web development and love to create new things. I'm currently looking for a job as a web developer. If you're interested in hiring me, please contact me.

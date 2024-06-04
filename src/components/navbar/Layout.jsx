@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { Action_Button } from './Action-Button'
 import Footer from './Footer'
 import { TbMenuDeep } from 'react-icons/tb'
@@ -7,6 +7,7 @@ import { TbMenuDeep } from 'react-icons/tb'
 const Layout = () => {
 
     const [isOpen, setIsOpen] = React.useState(true)
+    const navigate = useNavigate()
 
     return (
         <>
@@ -65,7 +66,9 @@ const Layout = () => {
                                 >About Me</NavLink>
                             </div>
                         </div>
-                        <button className='bg-gray-800 mt-5 text-sm hover:bg-gray-700 duration-200 text-white font-medium py-3 px-4 rounded'>
+                        <button
+                        onClick={() => navigate('/contact')}
+                        className='bg-gray-800 mt-5 text-sm hover:bg-gray-700 duration-200 text-white font-medium py-3 px-4 rounded'>
                             Contact Me
                         </button>
 
