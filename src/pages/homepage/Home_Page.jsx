@@ -3,8 +3,11 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { MySkills } from '../../component-page/home_/MySkills'
 import { Hire_Me } from '../../component-page/home_/Hire_Me'
+import { useNavigate } from 'react-router-dom'
 
 const Home_Page = () => {
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     Aos.init({ duration: 1000 })
@@ -31,7 +34,9 @@ const Home_Page = () => {
           className='bg-gray-800 text-sm hover:bg-gray-700 duration-200 text-white font-medium py-3 px-4 rounded-lg mt-5'>
              Explore my skills
           </button>
-          <button className=' border-2 text-sm duration-200 text-gray-800 font-medium py-3 px-4 rounded-lg mt-5'>
+          <button 
+          onClick={() => navigate('/contact')}
+          className=' border-2 text-sm duration-200 text-gray-800 font-medium py-3 px-4 rounded-lg mt-5'>
             Contact Me
           </button>
         </div>
